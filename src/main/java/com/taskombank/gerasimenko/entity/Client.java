@@ -1,6 +1,15 @@
 package com.taskombank.gerasimenko.entity;
 
+import javax.persistence.*;
+
+
+@Entity
+@Table(name = "Clients")
 public class Client {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
 
     private String name;
     private String email;
@@ -13,6 +22,14 @@ public class Client {
         this.name = name;
         this.email = email;
         this.phone = phone;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {
