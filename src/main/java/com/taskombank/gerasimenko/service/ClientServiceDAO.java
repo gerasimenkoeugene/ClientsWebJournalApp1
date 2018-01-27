@@ -13,7 +13,7 @@ public interface ClientServiceDAO {
 
     Client saveOrUpdate(Client domainObject);
 
-    Client getByName(@NotNull final String username);
+    Client getByName(@NotNull final String client);
 
     void delete(Integer id);
 }
