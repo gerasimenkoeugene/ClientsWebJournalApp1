@@ -40,7 +40,7 @@ public class ClientController {
 
     @RequestMapping(value = "/{id}", method=RequestMethod.DELETE)
     @ResponseBody
-    public void deleteOrder(@PathVariable Integer id){
+    public void deleteClient(@PathVariable Integer id){
         clientService.delete(id);
     }
 }
